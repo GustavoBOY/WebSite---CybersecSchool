@@ -1,0 +1,59 @@
+.container{
+    max-width:100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #0b0c58;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+.navbar .menu .options li a:hover{
+    color: #000000;
+}
+.logo img{
+    width: 5.5rem;
+}
+.options {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#alternador, .navbar label{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .menu {
+        width: 100vw;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .options{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #alternador:checked~.menu{
+        max-height: 100%;
+    }
+
+}

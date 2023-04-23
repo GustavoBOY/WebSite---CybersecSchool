@@ -1,0 +1,46 @@
+@import url(reset.css);
+@import url(navbar.css);
+@import url(security.css);
+@import url(student.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    background: #1b1b1b;
+    background-image: url(../imgs/3047902.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.padrao {
+ max-width: 1024px;
+ margin: 0 auto;
+}
+.padrao h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: #fff;
+} 
+.padrao div, p, a{
+    font-size: 1.1rem;
+    font-family: monospace;
+    display: block;
+    color: #fff;
+}
