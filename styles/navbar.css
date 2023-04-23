@@ -5,19 +5,17 @@
 }
 
 .navbar{
-    position: sticky;
-    top: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    background-color: #0b0c58;
+    background-color: #ffffff;
 }
 
 .navbar a{
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: 600;
 }
 .navbar .menu .options li a:hover{

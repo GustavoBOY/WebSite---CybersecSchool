@@ -44,3 +44,13 @@ section {
     display: block;
     color: #fff;
 }
+
+@media screen and (max-width:600px){
+    .padrao h1{
+        font-size: 1.5rem;
+    } 
+    .padrao div, p, a{
+        padding: 3px;
+        font-size: 0.9rem;
+    }
+}
