@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar container">
 
-        <a href="#" class="logo"><img src="imgs/logo/logoCS2.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="imgs/logo/logoCS2.png" alt=""></a>
 
         <input type="checkbox" id="alternador">
         <label for="alternador"><i class="ri-menu-line ri-xl"></i></label>
@@ -42,11 +42,11 @@
        <div class="padrao">
             <h1>Práticas de Segurança</h1>
             <div class="list security">
-                <p class="list"># 1 - Avaliar constantemente as situações de risco.</p>
-                <p class="list"># 2 - Garantir o uso de ferramentas e equipamentos adequados.</p>
-                <p class="list"># 3 - Oferecer treinamento e capacitação.</p>
-                <p class="list"># 4 - Criar um canal de comunicação direta.</p>
-                <p class="list"># 5 - Esclarecer sobre a importância das rotinas de segurança.</p>    
+                <p class="list"># 1 - Implantar a autenticação multifator.</p>
+                <p class="list"># 2 - Não compartilhe ou envie arquivos antes de verificar se são seguros.</p>
+                <p class="list"># 3 - Realize backup das informações mais importantes de forma regular.</p>
+                <p class="list"># 4 - Atualize as senhas frequentemente.</p>
+                <p class="list"># 5 - Mantenha sempre o antivirus ativo e atualizado.</p>    
             </div>
             
        </div>
@@ -56,11 +56,26 @@
     </section>
 
     <section class="AreaDoAluno" id="student">
-         <div class="padrao">
+        
+        <div class="padrao">
             <h1>Área do aluno</h1>
-            <a href="">Increver-se</a>
-            <a href="">Já sou aluno</a>
-         </div>       
+
+            <div class="student">
+                <div class="aluno">
+                   <div>
+
+                   </div>
+                </div>
+                
+                <div class="aluno">   
+                    <div>
+
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>       
         
     </section>
 
@@ -73,10 +88,25 @@
     <section class="contato" id="contact">
         <div class="padrao">
             <h1>Contato</h1>
+
+            <form method="post">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            
+                <label for="subject">Assunto:</label>
+                <input type="text" name="subject" id="subject" required>
+            
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+            
+
         </div> 
     </section>
-
-<script src="code.js"></script>
-    
+    <script src="script/code.js"></script>
 </body>
 </html>
