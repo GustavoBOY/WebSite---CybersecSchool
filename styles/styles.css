@@ -1,10 +1,10 @@
 @import url(reset.css);
 @import url(navbar.css);
 @import url(security.css);
-@import url(student.css);
-@import url(contact.css);
+
 
 :root{
+    --cor-padraoTitulo: #050505;
     --cor-padraotext: #fff;
     --cor-padraotextoNav: #050505;
     --cor-padraoHoverNav: #1132ed;
@@ -22,13 +22,13 @@ html, body{
     background: #1b1b1b;
     background-image: url(../imgs/3047902.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     background-attachment: fixed;
 }
 
 section {
-    height: 100vh;
+    height: 100vh !important;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -36,30 +36,43 @@ section {
     box-sizing: border-box;
 }
 .padrao {
- max-width: 1024px;
- margin: 0 auto;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 .padrao h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
+    box-shadow: 5px 5px 5px #1e00ff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    background-color: #fff;
+    border-radius: 5px;
+
+    padding: 5px;
     margin: 1.5rem;
-    color: var(--cor-padraotext);
+    color: var(--cor-padraoTitulo);
 } 
 .padrao div, p, a{
     font-size: 1.1rem;
     font-family: monospace;
-
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 3px;
     display: block;
     color:var(--cor-padraotext);
 } 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:768px){
+
     .padrao h1{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        padding: 3px;
+        margin: 1rem;
     } 
     .padrao div, p, a{
         padding: 3px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
